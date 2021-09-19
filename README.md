@@ -15,3 +15,9 @@ setInterval(function() {
   Game.shimmers.forEach(function(shimmer){shimmer.pop()});
 }, 5000);
 ```
+
+## SummonCookieStorm
+
+クッキーストームが30秒ごとに発生します。
+`AutoGoldenCookie`MODと併用することでとんでもない速度でクッキーが生成されます。
+ゲームバランスはぶっ壊れますが、手っ取り早く進めたい場合に使えます。
