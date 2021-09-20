@@ -1,6 +1,6 @@
 Game.registerMod("summon cookie storm mod",{
 	init:function(){
-		Game.Notify(`SummonCookieStorm Mod`,`summon!!!.`,[29,28]);
+		Game.Notify(`SummonCookieStorm Mod`,`summon!!!.`,[22,16]);
 
 		var newShimmer=new Game.shimmer("golden");
 
