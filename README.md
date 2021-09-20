@@ -56,11 +56,43 @@ if (Game.Ticker.match(/フォーチュン/))
 Game.lumpCurrentType=2;
 ```
 
+### CiltivationBoost
+
+※セーブがトリガーになっているMODです
+
+woodchipsを選択すると約1秒ごとにTickが発生するようになります。
+爆速で作物を育てたい場合にどうぞ。
+
+以下の数値をいじることで好きな秒数に変更可能。
+単位が`分`なのでそれっぽく計算して使ってね。
+
+```js
+fg.soils.woodchips.tick = 0.02
+```
+
+### MutationBoost
+
+※セーブがトリガーになっているMODです
+
+植物の変異確率をいじれます。
+:warning: 変異抽選の処理をソースコードからコピペして上書きするMODになっているため、ゲームのアップデートによって新しい植物が追加されたり、確率などに修正が起きた場合に正しく動作しなくなる危険性が高いです。
+
+デフォルトで、女王ビーツ8個で女王ビーツ・豊潤が発生する確率が90%になっています。
+
+```js
+if (neighsM['queenbeet']>=8) muts.push(['queenbeetLump',0.9]); // デフォルトに戻したい場合は0.001に戻す
+```
+
+アイテム名や条件などをwikiで参照しつつそれっぽくカスタムしてください。
+
 ## 参考情報
 
 ### ソースコード
 
 http://orteil.dashnet.org/cookieclicker/main.js
+
+農場に関するソースコードはこっち
+https://orteil.dashnet.org/cookieclicker/minigameGarden.js
 
 ### Game.Notifyで利用するアイコン
 
