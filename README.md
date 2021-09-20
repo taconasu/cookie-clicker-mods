@@ -85,6 +85,11 @@ if (neighsM['queenbeet']>=8) muts.push(['queenbeetLump',0.9]); // デフォル�
 
 アイテム名や条件などをwikiで参照しつつそれっぽくカスタムしてください。
 
+### AutomaticThumbcornCultivation
+
+空いてるマスにThumbcorn(親指コーン)を自動で植え、次のTickで枯れてしまう植物を自動収穫してくれるMOD。
+上述した`CiltivationBoost`MODと併用することで爆速で種まき→収穫を行い、収穫数関連の実績をすぐに開けることが可能になる。
+
 ## 参考情報
 
 ### ソースコード
