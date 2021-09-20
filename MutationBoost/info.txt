@@ -1,0 +1,11 @@
+{
+	"Name": "Mutation Boost mod",
+	"ID": "mutation boost mod",
+	"Author": "smichr",
+	"Description": "変異確率操作",
+	"ModVersion": 1,
+	"GameVersion": 2.04,
+	"Date": "20/09/2021",
+	"Dependencies": [],
+	"Disabled": 1
+}
