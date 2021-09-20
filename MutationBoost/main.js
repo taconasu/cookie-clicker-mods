@@ -1,7 +1,8 @@
 Game.registerMod("mutation boost mod",{
+	init: () => {
+		Game.Notify(`MutationBoost`,`save実行後、変異確率が更新されます`,[2,32]);
+	},
 	save: () => {
-		Game.Notify(`MutationBoost`,`変異確率操作`,[2,32]);
-
 		const fg = Game.Objects['Farm'].minigame;
 		fg.getMuts=function(neighs,neighsM) {
 			var muts=[];
